@@ -6,7 +6,7 @@ sflowtool parser for topology discovery
 Analyzes incoming sFlow packets and builds similar Mininet topology.
 
 
-Usage:   sflowtool -4 | ./discoverer.py
+Usage:   sflowtool | ./discoverer.py
    (also see --help)
 
 """
@@ -260,7 +260,7 @@ class Switch(NetworkElement):
 
 class UndirectedGraph(object):
     """
-    This class is used to check link inferring - do the path exist in builded topology?
+    This class is used to check link inferring - does the path exist in built topology?
 
     Really abstract, not related with other parts of the program.
     """
