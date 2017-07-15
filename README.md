@@ -7,5 +7,6 @@ is collected from stdin, and the appropriate usage is
         "sflowtool | ./discoverer.py"
 
 This is tested with mininet network emulation software
-(http://github.com/mininet) but is designed to work as an sflow collector that
-parses RFCXXXX compliant sflow traffic.
+(https://github.com/mininet/mininet) but is designed to work as an sflow
+collector that parses RFC3176 compliant sflow traffic from any type of network
+device.
