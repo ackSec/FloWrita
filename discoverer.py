@@ -501,7 +501,7 @@ def collect_datagrams(args):
         log_info('Collecting sFlows from <<stdin>>, press Ctrl-C to interrupt')
         dgram_input = sys.stdin
         if sys.stdin.isatty():
-            warning('Stdin is a tty, you should use "sflowtool | ./{0}" to collect sFlows'.format(
+            warning('Stdin collects input, you should use "sflowtool | ./{0}" to collect sFlows'.format(
                 basename(sys.argv[0])))
     else:
         dgram_input = open(args.inputfile, 'rt')
@@ -555,6 +555,7 @@ def get_commandline_options():
 def main():
     """
     Collect datagrams, create topology
+
     """
     args = get_commandline_options()
     collected = collect_datagrams(args)
