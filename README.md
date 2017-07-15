@@ -1,8 +1,9 @@
 # FloWrita
 
 This is a program designed to infer a network topology based on sFlow
-information received. sflowtool is used as a listener and sFlow receiver. Input
-is collected from stdin, and the appropriate usage is
+information received. sflowtool (https://github.com/sflow/sflowtool) is used as
+a listener and sFlow receiver. Input is collected from stdin, and the
+appropriate usage is:
 
         "sflowtool | ./discoverer.py"
 
